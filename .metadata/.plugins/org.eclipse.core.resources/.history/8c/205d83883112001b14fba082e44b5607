@@ -1,0 +1,5 @@
+package com.matheus.osworks.domain.model;
+
+public class Cliente {
+
+}
