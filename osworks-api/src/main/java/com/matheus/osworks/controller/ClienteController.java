@@ -1,3 +1,4 @@
+
 package com.matheus.osworks.controller;
 
 import java.net.URI;
@@ -20,20 +21,24 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.matheus.osworks.domain.model.Cliente;
 import com.matheus.osworks.domain.repository.ClienteRepository;
+import com.matheus.osworks.services.ClienteService;
 
 @RestController
 @RequestMapping("/clientes")
 public class ClienteController {
 
 	@Autowired
+	private ClienteService clienteService;
+	
+	@Autowired
 	private ClienteRepository clienteRepository;
 	
 	@GetMapping
 	public ResponseEntity<List<Cliente>> findAll() {
-		List<Cliente> list = clienteRepository.findAll();
+		List<Cliente> list = clienteService.findAll();
 		return ResponseEntity.ok().body(list);
-		//return clienteRepository.findByNome("João da Silva");
-		//return clienteRepository.findByNomeContaining("a");
+		//return clienteService.findByNome("João da Silva");
+		//return clienteService.findByNomeContaining("a");
 	}
 	
 	@GetMapping(value = "/{clienteId}")
@@ -49,7 +54,7 @@ public class ClienteController {
 	
 	@PostMapping
 	public ResponseEntity<Cliente> insert(@Valid @RequestBody Cliente cliente) {
-		Cliente cli = clienteRepository.save(cliente);
+		Cliente cli = clienteService.insert(cliente);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(cli.getId()).toUri();
 		return ResponseEntity.created(uri).body(cli);
 	}

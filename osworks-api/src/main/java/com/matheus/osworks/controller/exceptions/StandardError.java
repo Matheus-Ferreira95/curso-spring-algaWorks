@@ -7,14 +7,14 @@ public class StandardError implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Integer status;
-	private LocalDateTime datHora;
-	private String titulo;
+	private LocalDateTime dataEHora;
+	private String mensagem;
 		
-	public StandardError(Integer status, LocalDateTime datHora, String titulo) {
+	public StandardError(Integer status, LocalDateTime dataEHora, String mensagem) {
 		super();
 		this.status = status;
-		this.datHora = datHora;
-		this.titulo = titulo;
+		this.dataEHora = dataEHora;
+		this.mensagem = mensagem;
 	}
 	
 	public Integer getStatus() {
@@ -23,16 +23,16 @@ public class StandardError implements Serializable {
 	public void setStatus(Integer status) {
 		this.status = status;
 	}
-	public LocalDateTime getDatHora() {
-		return datHora;
+	public LocalDateTime getDataEHora() {
+		return dataEHora;
 	}
-	public void setDatHora(LocalDateTime datHora) {
-		this.datHora = datHora;
+	public void setDaaEtHora(LocalDateTime dataEHora) {
+		this.dataEHora = dataEHora;
 	}
-	public String getTitulo() {
-		return titulo;
+	public String getMensagem() {
+		return mensagem;
 	}
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setTitulo(String mensagem) {
+		this.mensagem = mensagem;
 	}
 }

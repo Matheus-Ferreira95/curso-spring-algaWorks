@@ -3,3 +3,4 @@
 1603129449298	Rename type 'Client'
 1603129457448	Rename type 'ClientController'
 1603311995303	Rename compilation unit 'ExceptionHandler.java'
+1603314662538	Rename type 'NegocioException'

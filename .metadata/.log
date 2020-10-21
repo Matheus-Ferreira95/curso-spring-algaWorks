@@ -1542,3 +1542,99 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-10-21 17:51:22.699
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:20.257
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yWqXKTqV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:20.263
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.yWqXKTqV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:20.268
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:20.274
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.yWqXKTqV => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:29.703
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:29.709
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@460fe6e3[org.springframework.tooling.boot.ls:1.20.0.202007271426(id=635)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:29.715
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.165
+!MESSAGE Boot LS startup time from start to initialized: 1444ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.193
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zehjSOrLisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.199
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.207
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.213
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.218
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.224
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.235
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.240
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zehjSOrL => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.245
+!MESSAGE classpath=98 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.252
+!MESSAGE buffering callback sts4.classpath.zehjSOrL osworks-api false 98
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.257
+!MESSAGE executing callback sts4.classpath.zehjSOrL 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 17:56:31.278
+!MESSAGE executing callback sts4.classpath.zehjSOrL SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-10-21 18:24:21.836
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 18:32:21.705
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zehjSOrL
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 18:32:21.713
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.zehjSOrL
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 18:32:21.720
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-21 18:32:21.725
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zehjSOrL => OK
