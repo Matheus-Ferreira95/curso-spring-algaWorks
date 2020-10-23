@@ -1,7 +1,6 @@
 package com.matheus.osworks.controller.exceptions;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 
 public class StandardError implements Serializable {

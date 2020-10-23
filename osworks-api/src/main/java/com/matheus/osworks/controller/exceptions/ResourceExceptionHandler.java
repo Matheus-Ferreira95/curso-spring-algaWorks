@@ -42,15 +42,4 @@ public class ResourceExceptionHandler {
 		StandardError se = new StandardError(status.value(), OffsetDateTime.now(), e.getMessage(), request.getRequestURI());
 		return ResponseEntity.status(status).body(se);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

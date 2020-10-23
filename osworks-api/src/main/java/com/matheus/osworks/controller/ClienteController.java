@@ -22,6 +22,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.matheus.osworks.domain.model.Cliente;
 import com.matheus.osworks.domain.repository.ClienteRepository;
 import com.matheus.osworks.services.ClienteService;
+import com.matheus.osworks.services.exceptions.ResourceNotFoundException;
 
 @RestController
 @RequestMapping("/clientes")
@@ -71,7 +72,7 @@ public class ClienteController {
 			return ResponseEntity.ok().body(entity);
 		}
 		
-		return ResponseEntity.notFound().build();
+		throw new ResourceNotFoundException("Cliente não existente! Digite um id válido");
 	}	
 	
 	@DeleteMapping(value = "/{clienteId}")

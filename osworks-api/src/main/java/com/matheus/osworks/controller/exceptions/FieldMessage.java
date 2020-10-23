@@ -6,7 +6,6 @@ public class FieldMessage {
 	private String mensagem;
 		
 	public FieldMessage(String nome, String mensagem) {
-		super();
 		this.nome = nome;
 		this.mensagem = mensagem;
 	}
