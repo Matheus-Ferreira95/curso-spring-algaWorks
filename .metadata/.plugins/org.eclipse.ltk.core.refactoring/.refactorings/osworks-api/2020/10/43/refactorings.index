@@ -9,3 +9,13 @@
 1603384226560	Rename type 'StatusOrderServico'
 1603388281536	Delete element
 1603389922249	Encapsulate field 'path'
+1603391791628	Delete element
+1603398659192	Encapsulate field 'clienteDTO'
+1603398933389	Rename type 'ClienteDTO'
+1603399374573	Rename type 'ClienteResumoModel'
+1603399399093	Encapsulate field 'clienteNome'
+1603399478125	Encapsulate field 'cliente'
+1603399767535	Rename type 'OrderServicoInsertDTO'
+1603401431884	Copy file
+1603401464445	Rename resource 'cria-tabela-comentarios.sql'
+1603401524926	Copy compilation unit

@@ -1,6 +1,6 @@
 package com.matheus.osworks.controller.exceptions;
 
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +9,7 @@ public class ValidationError extends StandardError {
 	
 	private List<FieldMessage> errors = new ArrayList<>();
 	
-	public ValidationError(Integer status, LocalDateTime datHora, String titulo, String path) {
+	public ValidationError(Integer status, OffsetDateTime datHora, String titulo, String path) {
 		super(status, datHora, titulo, path);		
 	}
 

@@ -2,16 +2,17 @@ package com.matheus.osworks.controller.exceptions;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 
 public class StandardError implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Integer status;
-	private LocalDateTime dataEHora;
+	private OffsetDateTime dataEHora;
 	private String mensagem;
 	private String path;
 		
-	public StandardError(Integer status, LocalDateTime dataEHora, String mensagem, String path) {
+	public StandardError(Integer status, OffsetDateTime dataEHora, String mensagem, String path) {
 		super();
 		this.status = status;
 		this.dataEHora = dataEHora;
@@ -25,10 +26,10 @@ public class StandardError implements Serializable {
 	public void setStatus(Integer status) {
 		this.status = status;
 	}
-	public LocalDateTime getDataEHora() {
+	public OffsetDateTime getDataEHora() {
 		return dataEHora;
 	}
-	public void setDaaEtHora(LocalDateTime dataEHora) {
+	public void setDaaEtHora(OffsetDateTime dataEHora) {
 		this.dataEHora = dataEHora;
 	}
 	public String getMensagem() {
